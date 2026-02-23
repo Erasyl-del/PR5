@@ -1,0 +1,10 @@
+public class Weapon implements Cloneable {
+    String name;
+    int damage;
+
+    public Weapon(String n,int d){ name=n; damage=d; }
+
+    public Weapon clone(){
+        return new Weapon(name,damage);
+    }
+}
