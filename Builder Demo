@@ -1,0 +1,13 @@
+public class BuilderDemo {
+    public static void main(String[] args) {
+
+        ReportDirector director = new ReportDirector();
+        ReportStyle style = new ReportStyle("black","white",14);
+
+        IReportBuilder builder = new HtmlReportBuilder();
+        director.constructReport(builder, style);
+
+        Report report = builder.getReport();
+        report.export();
+    }
+}
