@@ -1,0 +1,9 @@
+public class Skill implements Cloneable {
+    String name;
+
+    public Skill(String n){ name=n; }
+
+    public Skill clone(){
+        return new Skill(name);
+    }
+}
