@@ -1,0 +1,15 @@
+public class PrototypeDemo {
+    public static void main(String[] args) {
+
+        Character hero = new Character();
+        hero.health = 100;
+        hero.weapon = new Weapon("Sword", 50);
+        hero.armor = new Armor("Steel", 30);
+        hero.skills.add(new Skill("Fireball"));
+
+        Character clone = hero.clone();
+
+        hero.show();
+        clone.show();
+    }
+}
