@@ -1,0 +1,11 @@
+public class ReportStyle {
+    public String backgroundColor;
+    public String fontColor;
+    public int fontSize;
+
+    public ReportStyle(String bg, String font, int size) {
+        this.backgroundColor = bg;
+        this.fontColor = font;
+        this.fontSize = size;
+    }
+}
