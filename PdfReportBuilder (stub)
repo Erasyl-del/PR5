@@ -1,0 +1,3 @@
+public class PdfReportBuilder extends TextReportBuilder {
+    // Нақты PDF үшін iText кітапханасын қосуға болады
+}
