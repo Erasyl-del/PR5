@@ -1,0 +1,10 @@
+public class ReportDirector {
+
+    public void constructReport(IReportBuilder builder, ReportStyle style) {
+        builder.setHeader("Game Report");
+        builder.addSection("Players", "1500 online");
+        builder.setContent("Statistics inside...");
+        builder.setFooter("End of report");
+        builder.setStyle(style);
+    }
+}
