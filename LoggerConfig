@@ -1,0 +1,5 @@
+public class LoggerConfig {
+    public String logFilePath = "app.log";
+    public LogLevel level = LogLevel.INFO;
+    public long maxFileSize = 1024 * 50; // 50 KB
+}
