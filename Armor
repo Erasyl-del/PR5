@@ -1,0 +1,10 @@
+public class Armor implements Cloneable {
+    String name;
+    int defense;
+
+    public Armor(String n,int d){ name=n; defense=d; }
+
+    public Armor clone(){
+        return new Armor(name,defense);
+    }
+}
